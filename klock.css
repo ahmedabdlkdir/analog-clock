@@ -1,0 +1,183 @@
+
+body {
+  overflow: hidden;
+}
+
+.clockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .clock {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 8px solid  #76AA9E;
+    border-radius: 50%;
+
+ 
+  }
+
+  /* the code for the hand class */
+
+.hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  }
+  
+
+  /* the Properties for the little circle in the middle */
+  .clock::after {
+    content: '';
+    position: absolute;
+    background-color:  #76AA9E;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 100;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+
+  /* the properties for the three hands */
+.secondHand {
+    width: 3px;
+    height: 46.5%;
+    background-color: black;
+  }
+  
+.minuteHand {
+    width: 7px;
+    height: 39.5%;
+    background-color:  black;
+  }
+  
+.hourHand {
+    width: 10px;
+    height: 35%;
+    background-color:  black;
+  }
+  
+  
+.numbers {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1em;
+  }
+  /* this rotates all the numbers around the clock */
+
+  .number1 { --rotation: 30deg; }
+  .number2 { --rotation: 60deg; }
+  .number3 { --rotation: 90deg; }
+  .number4 { --rotation: 120deg; }
+  .number5 { --rotation: 150deg; }
+  .number6 { --rotation: 180deg; }
+  .number7 { --rotation: 210deg; }
+  .number8 { --rotation: 240deg; }
+  .number9 { --rotation: 270deg; }
+  .number10 { --rotation: 300deg; }
+  .number11 { --rotation: 330deg; }
+
+/* this rotates the number to appear upright and look good to the eyes */
+.flipNumber1 { transform: rotate(-20deg);}
+.flipNumber2 { transform: rotate(-70deg);}
+.flipNumber3 { transform: rotate(-85deg);}
+.flipNumber4 { transform: rotate(-120deg);}
+.flipNumber5 { transform: rotate(-170deg);}
+.flipNumber6 { transform: rotate(-180deg);}
+.flipNumber7 { transform: rotate(-180deg);}
+.flipNumber9 { transform: rotate(85deg);}
+
+
+/* this is for the little dots in between the numbers.I thought it was cool because real clocks have them*/
+
+  .dots {
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+
+
+}
+ /* this rotates the little dots around the clock */
+.dot1 {--rotation: 6deg;}
+.dot2 {--rotation: 12deg;}
+.dot3 {--rotation: 18deg;}
+.dot4 {--rotation: 24deg;}
+.dot5 {--rotation: 30deg; font-weight: bold;}
+.dot6 {--rotation: 36deg;}
+.dot7 {--rotation: 42deg;}
+.dot8 {--rotation: 48deg;}
+.dot9 {--rotation: 54deg;}
+.dot10 {--rotation: 60deg;font-weight: bold;}
+.dot11 {--rotation: 66deg;}
+.dot12 {--rotation: 72deg;}
+.dot13 {--rotation: 78deg;}
+.dot14 {--rotation: 84deg;}
+.dot15 {--rotation: 90deg; font-weight: bold;}
+.dot16 {--rotation: 96deg;}
+.dot17 {--rotation: 102deg;}
+.dot18 {--rotation: 108deg;}
+.dot19 {--rotation: 114deg ;}
+.dot20 {--rotation: 120deg; font-weight: bold;}
+.dot21 {--rotation: 126deg;}
+.dot22 {--rotation: 132deg;}
+.dot23 {--rotation: 138deg;}
+.dot24 {--rotation: 144deg;}
+.dot25 {--rotation: 150deg; font-weight: bold;}
+.dot26 {--rotation: 156deg;}
+.dot27 {--rotation: 162deg;}
+.dot28 {--rotation: 168deg;}
+.dot29 {--rotation: 174deg;}
+.dot30 {--rotation: 180deg; font-weight: bold;}
+.dot31 {--rotation: 186deg;}
+.dot32 {--rotation: 192deg;}
+.dot33 {--rotation: 198deg;}
+.dot34 {--rotation: 204deg;}
+.dot35 {--rotation: 210deg; font-weight: bold;}
+.dot36 {--rotation: 216deg;}
+.dot37 {--rotation: 222deg;}
+.dot38 {--rotation: 228deg;}
+.dot39 {--rotation: 234deg;}
+.dot40 {--rotation: 240deg; font-weight: bold;}
+.dot41 {--rotation: 246deg;}
+.dot42 {--rotation: 252deg;}
+.dot43 {--rotation: 258deg;}
+.dot44 {--rotation: 264deg;}
+.dot45 {--rotation: 270deg; font-weight: bold;}
+.dot46 {--rotation: 276deg;}
+.dot47 {--rotation: 282deg;}
+.dot48 {--rotation: 288deg;}
+.dot49 {--rotation: 294deg;}
+.dot50 {--rotation: 300deg; font-weight: bold;}
+.dot51 {--rotation: 306deg;}
+.dot52 {--rotation: 312deg;}
+.dot53 {--rotation: 318deg;}
+.dot54 {--rotation: 324deg;}
+.dot55 {--rotation: 330deg; font-weight: bold;}
+.dot56 {--rotation: 336deg;}
+.dot57 {--rotation: 342deg;}
+.dot58 {--rotation: 348deg;}
+.dot59 {--rotation: 354deg;}
+.dot60 {--rotation: 360deg; font-weight: bold;}
+  
+ 
