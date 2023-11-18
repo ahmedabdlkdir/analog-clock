@@ -8,13 +8,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
   }
   
   .clock {
     position: relative;
     width: 400px;
     height: 400px;
-    border: 8px solid  #76AA9E;
+    border: 8px solid  #acacac;
+    background-color: #080B0F;
     border-radius: 50%;
 
  
@@ -39,7 +41,7 @@ body {
   .clock::after {
     content: '';
     position: absolute;
-    background-color:  #76AA9E;
+    background-color:  #D3D6D5;
     border: 2px solid black;
     border-radius: 50%;
     z-index: 100;
@@ -56,19 +58,19 @@ body {
 .secondHand {
     width: 3px;
     height: 46.5%;
-    background-color: black;
+    background-color: #B91A22;
   }
   
 .minuteHand {
     width: 7px;
     height: 39.5%;
-    background-color:  black;
+    background-color:  #C8C5CA;
   }
   
 .hourHand {
     width: 10px;
     height: 35%;
-    background-color:  black;
+    background-color:  #C8C5CA;
   }
   
   
@@ -80,6 +82,7 @@ body {
     text-align: center;
     transform: rotate(var(--rotation));
     font-size: 1em;
+    color: #acacac;
   }
   /* this rotates all the numbers around the clock */
 
@@ -115,6 +118,7 @@ body {
     width: 400px;
     height: 400px;
     position: absolute;
+    color: #F3F3F3;
 
 
 }
