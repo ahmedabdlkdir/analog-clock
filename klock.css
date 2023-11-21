@@ -42,7 +42,7 @@ body {
     content: '';
     position: absolute;
     background-color:  #D3D6D5;
-    border: 2px solid black;
+    border: 2px solid #B91A22;
     border-radius: 50%;
     z-index: 100;
     width: 15px;
@@ -83,6 +83,9 @@ body {
     transform: rotate(var(--rotation));
     font-size: 1em;
     color: #acacac;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   /* this rotates all the numbers around the clock */
 
@@ -119,6 +122,9 @@ body {
     height: 400px;
     position: absolute;
     color: #F3F3F3;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
 
 }
@@ -184,4 +190,6 @@ body {
 .dot59 {--rotation: 354deg;}
 .dot60 {--rotation: 360deg; font-weight: bold;}
   
- 
+ /* .diamond {
+  color: red;
+ } */
